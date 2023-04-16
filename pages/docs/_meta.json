@@ -1,0 +1,20 @@
+{
+  "index": "Introduction",
+  "-- Tutorials": {
+    "type": "separator",
+    "title": "Tutorials"
+  },
+  "-- More": {
+    "type": "separator",
+    "title": "More"
+  },
+  "about-link": {
+    "title": "About AnyLabeling",
+    "href": "/about"
+  },
+  "next.js-link": {
+    "title": "AI Curious Blog ↗",
+    "href": "https://aicurious.io/blog",
+    "newWindow": true
+  }
+}
