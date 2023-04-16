@@ -4,6 +4,10 @@
     "type": "separator",
     "title": "Tutorials"
   },
+  "autolabeling-sam-link": {
+    "title": "Auto labeling with Segment Anything",
+    "href": "/docs/autolabeling/sam"
+  },
   "-- More": {
     "type": "separator",
     "title": "More"
