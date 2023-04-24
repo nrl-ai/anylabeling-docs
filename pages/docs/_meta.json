@@ -4,7 +4,18 @@
     "title": "Tutorials"
   },
   "index": "Introduction",
-  "sam": "Auto labeling with Segment Anything",
+  "Auto Labeling": {
+    "type": "separator",
+    "title": "Auto Labeling"
+  },
+  "model-inference": "Model Inference",
+  "sam": "Segment Anything Model (SAM)",
+  "yolo": "YOLO Models",
+  "Labeling Tasks": {
+    "type": "separator",
+    "title": "Labeling Tasks"
+  },
+  "text-labeling": "Text OCR Labeling",
   "More": {
     "type": "separator",
     "title": "More"

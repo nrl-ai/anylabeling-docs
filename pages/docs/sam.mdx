@@ -33,3 +33,17 @@ import Youtube from "components/video/youtube.jsx";
 - In the first time of running any model, AnyLabeling needs to download the model from the server. Therefore, it may takes a while depending on the network speed.
 - The first AI inference also takes time. Please be patient.
 - A background task is running to calculate "encoder" for Segment Anything Model. Therefore, it may take a shorter time for auto segmentation in the next images.
+
+## Integration of AnyLabeling into AnyLabeling
+
+Segment Anything Model is divided into two parts: a heavy Encoder and a light-weight Decoder. The Encoder extracts image embedding from an input image. Based on the embedding, and input prompt (points, box, masks), the Decoder produces output mask(s). The decoder can run in single or multiple-mask mode.
+
+![Segment Anything Model for auto labeling](https://aicurious.io/posts-data/2023-04-22-create-a-segment-anything-labeling-tool-any-labeling/sam.svg)
+
+<p className="text-center font-bold">Segment Anything in AnyLabeling</p>
+
+In the web demo, Meta runs the Encoder in their server, and the Decoder can be run in real time in the users' browser, where they can input points, and boxes and receive the output immediately. In **AnyLabeling**, we also run Encoder only once for each image. After that, based on the changes in the prompt from the user (points, boxes), the Decoder is run to produce an output mask. We added **Postprocessing** step to find the contours and produce shapes (polygons, rectangles, etc.) for labeling.
+
+To reduce the dependencies, instead of using [segment_anything](https://github.com/facebookresearch/segment-anything) package from Meta, we rewrote the code to use **ONNX Runtime** and **NumPy** only. The source code for running ONNX model can be found [here](https://github.com/vietanhdev/anylabeling/blob/master/anylabeling/services/auto_labeling/segment_anything.py) and the ONNX models were uploaded to [AnyLabeling Assets](https://github.com/vietanhdev/anylabeling-assets/releases/tag/v0.2.0).
+
+**Original from:** [https://aicurious.io/blog/2023-04-22-create-a-segment-anything-labeling-tool-any-labeling](https://aicurious.io/blog/2023-04-22-create-a-segment-anything-labeling-tool-any-labeling).

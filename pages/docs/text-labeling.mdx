@@ -1,0 +1,17 @@
+# Text OCR Labeling
+
+Text OCR labeling is a new feature in AnyLabeling. We recognize that text labeling is a common task in many labeling projects. However, it is still not supported well in both **Labelme** and **LabelImg**. That's why we decided to add this feature to AnyLabeling.
+
+![Labelme UI and AnyLabeling UI](https://aicurious.io/posts-data/2023-04-22-create-a-segment-anything-labeling-tool-any-labeling/anylabeling-ocr.png)
+
+<p className="text-center font-bold">Text OCR labeling in AnyLabeling.</p>
+
+The following labeling tools are supported in the first version:
+
+- **Image text labeling:** user can switch to Edit mode and update the text for the image - may be the image name or the image description.
+- **Text detection labeling with all object shapes (rectangle, polygon, etc.):** When users create a new object and switch to Edit mode, they can update the text for the object.
+- **Text grouping:** Imagine when you are working with KIE (Key-Information-Extraction), you need to group the text into different fields, containing the title and the value. In this case, you can use the Text grouping feature. When you create a new object, you can group it with other objects by selecting them and pressing **G**. The grouped objects will be marked with the same color. You can also ungroup them by pressing **U**.
+
+The labeled text and group information will be saved in the same JSON file as other annotations. The text will be saved in the `text` field of the object, and the group information will be saved in the `group_id` field.
+
+**Original from:** [https://aicurious.io/blog/2023-04-22-create-a-segment-anything-labeling-tool-any-labeling](https://aicurious.io/blog/2023-04-22-create-a-segment-anything-labeling-tool-any-labeling).
