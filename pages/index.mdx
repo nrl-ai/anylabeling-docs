@@ -260,24 +260,22 @@ import docsCardDark from '../public/screenshot.png'
         <Feature index={1} centered className="card-with-border" href="/docs">
           <div className="h-full flex flex-col justify-start">
             <h3> <span style={{ fontWeight: 300 }}>Easy to Get Started</span> <br/></h3>
-            <p className='text-center mb-4'>Install With Pip</p>
+            <p className='text-center mb-2 mt-4'>Install and Run with Pip</p>
             <div>
               <div className={styles.optimization}>
-                <div style={{ fontSize: '.9rem' }} className="leading-4">
-                  <code>{`pip install anylabeling`}</code>
+                <div style={{ fontSize: '.9rem' }} className="leading-2 text-left">
+                  <code>{`pip install anylabeling`}</code><br></br>
+                  <code>{`anylabeling # Run the app`}</code>
                 </div>
               </div>
             </div>
-            <p className='text-center mb-4'>Start Labeling</p>
             <div>
-              <div className={styles.optimization}>
-                <div style={{ fontSize: '.9rem' }} className="leading-4">
-                  <code>{`anylabeling`}</code>
-                </div>
+              <div className="mt-2 mb-4">
+                Or <Link href="https://github.com/vietanhdev/anylabeling/releases">Download Binary</Link>
               </div>
-              <p className="subtitle">
+              <div className="subtitle">
                 <Link className={styles.cta} href="/docs">Next steps <span>→</span></Link>
-              </p>
+              </div>
             </div>
           </div>
         </Feature>
