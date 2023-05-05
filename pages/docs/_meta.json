@@ -4,6 +4,7 @@
     "title": "Tutorials"
   },
   "index": "Introduction",
+  "installation": "How to Install?",
   "Auto Labeling": {
     "type": "separator",
     "title": "Auto Labeling"
