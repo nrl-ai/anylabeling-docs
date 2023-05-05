@@ -11,6 +11,7 @@
   "model-inference": "Model Inference",
   "sam": "Segment Anything Model (SAM)",
   "yolo": "YOLO Models",
+  "gpu": "GPU Acceleration",
   "Labeling Tasks": {
     "type": "separator",
     "title": "Labeling Tasks"

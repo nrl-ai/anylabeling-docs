@@ -1,0 +1,28 @@
+# GPU Acceleration for Model Infererence
+
+GPU acceleration is available for model inference to speed up the process. To enable this feature, you will need a GPU with CUDA support and use corresponding version of AnyLabeling.
+
+## For PyPi Installation
+
+Install the GPU version of AnyLabeling with the following command:
+
+```bash
+pip install anylabeling-gpu
+```
+
+## For Binary Installation
+
+If you download the binary version of AnyLabeling from the [Releases](https://github.com/vietanhdev/anylabeling/releases), please choose the binary file with `GPU` in its name.
+
+![GPU Versions](/images/gpu-versions.png)
+
+## For Source Installation
+
+If you are using AnyLabeling from source, please set `__preferred_device__` to `GPU` in `anylabeling/app_info.py` file to enable GPU acceleration. The final code should look like this:
+
+```python
+__appname__ = "AnyLabeling"
+__appdescription__ = "Effortless data labeling with AI support"
+__version__ = "0.2.19"
+__preferred_device__ = "GPU"  # GPU or CPU
+```
