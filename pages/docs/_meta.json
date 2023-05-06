@@ -13,6 +13,7 @@
   "sam": "Segment Anything Model (SAM)",
   "yolo": "YOLO Models",
   "gpu": "GPU Acceleration",
+  "custom-models": "Loading Custom Models",
   "Labeling Tasks": {
     "type": "separator",
     "title": "Labeling Tasks"
