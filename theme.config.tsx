@@ -117,13 +117,13 @@ const config: DocsThemeConfig = {
             className="flex items-center gap-1 text-current"
             target="_blank"
             rel="noopener noreferrer"
-            title="AICurious Website"
-            href="https://aicurious.io"
+            title="Viet-Anh Nguyen Website"
+            href="https://www.vietanh.dev"
           >
             <div className="pt-0 mt-0">
               Developed by{" "}
               <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 text-bold">
-                AI Curious
+                Viet-Anh Nguyen
               </span>
               .
             </div>

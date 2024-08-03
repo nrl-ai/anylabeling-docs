@@ -2,7 +2,7 @@
 
 Adding model inference is a key to automate labeling tasks. The early version of AnyLabeling supports Segment Anything and YOLO models. The Segment Anything models and the first YOLOv5 model were added. Other YOLOv5 and YOLOv8 models were added by [Henry](https://github.com/hdnh2006). The model inference architecture is shown below:
 
-![Model inference architecture](https://aicurious.io/posts-data/2023-04-22-create-a-segment-anything-labeling-tool-any-labeling/model-inference.svg)
+![Model inference architecture](https://www.vietanh.dev/posts-data/2023-04-22-create-a-segment-anything-labeling-tool-any-labeling/model-inference.svg)
 
 In the architecture of **AnyLabeling**, [LabelingWidget](https://github.com/vietanhdev/anylabeling/blob/master/anylabeling/views/labeling/label_widget.py) is the main widget for any features. The drawing area is handled by class [Canvas](https://github.com/vietanhdev/anylabeling/blob/master/anylabeling/views/labeling/widgets/canvas.py). We added [AutoLabelingWidget](https://github.com/vietanhdev/anylabeling/blob/master/anylabeling/views/labeling/widgets/auto_labeling/auto_labeling.py) as the main widget for auto labeling feature and [ModelManager](https://github.com/vietanhdev/anylabeling/blob/master/anylabeling/services/auto_labeling/model_manager.py) for managing and running AI models.
 
