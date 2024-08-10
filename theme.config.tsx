@@ -47,8 +47,8 @@ const config: DocsThemeConfig = {
     const { route } = useRouter();
     const socialCard =
       route === "/" || !title
-        ? "https://anylabeling.com/og.jpeg"
-        : `https://anylabeling.com/api/og?title=${title}`;
+        ? "https://anylearning.nrl.ai/og.jpeg"
+        : `https://anylearning.nrl.ai/api/og?title=${title}`;
 
     return (
       <>
@@ -66,8 +66,8 @@ const config: DocsThemeConfig = {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={socialCard} />
-        <meta name="twitter:site:domain" content="anylabeling.com" />
-        <meta name="twitter:url" content="https://anylabeling.com" />
+        <meta name="twitter:site:domain" content="anylearning.nrl.ai" />
+        <meta name="twitter:url" content="https://anylearning.nrl.ai" />
         <meta
           name="og:title"
           content={title ? title + " – AnyLabeling" : "AnyLabeling"}
