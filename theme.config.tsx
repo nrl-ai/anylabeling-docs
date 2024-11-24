@@ -85,10 +85,10 @@ const config: DocsThemeConfig = {
     );
   },
   banner: {
-    key: "anylabeling-0.3.0.1",
+    key: "anylearning-beta",
     text: (
-      <a href="https://github.com/vietanhdev/anylabeling" target="_blank" rel="noreferrer">
-        🎉 Check out the latest AnyLabeling for AI-assisted image labeling! 🎉
+      <a href="https://anylearning.nrl.ai" target="_blank" rel="noreferrer">
+        🎉 Use AnyLearning for both data labeling and model training! 🎉
       </a>
     ),
   },
