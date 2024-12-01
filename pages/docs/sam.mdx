@@ -40,7 +40,7 @@ There are three variants of Segment Anything Model: **SAM**, **SAM2**, and **Mob
 - The first AI inference also takes time. Please be patient.
 - A background task is running to calculate "encoder" for Segment Anything Model. Therefore, it may take a shorter time for auto segmentation in the next images.
 
-## Integration of AnyLabeling into AnyLabeling
+## Integration of SAM into AnyLabeling
 
 Segment Anything Model is divided into two parts: a heavy Encoder and a light-weight Decoder. The Encoder extracts image embedding from an input image. Based on the embedding, and input prompt (points, box, masks), the Decoder produces output mask(s). The decoder can run in single or multiple-mask mode.
 
