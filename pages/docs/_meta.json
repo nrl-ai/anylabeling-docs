@@ -19,6 +19,7 @@
     "title": "Labeling Tasks"
   },
   "text-labeling": "Text OCR Labeling",
+  "data-exporting": "Data Exporting",
   "auto-use-last-label": "Auto Use Last Label",
   "More": {
     "type": "separator",

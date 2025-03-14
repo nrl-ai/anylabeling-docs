@@ -1,0 +1,65 @@
+# Data Exporting
+
+AnyLabeling provides flexible options for exporting your labeled data to various formats, allowing seamless integration with different machine learning frameworks and training pipelines.
+
+![Data Export Options](/images/export-dialog.png)
+
+## Supported Export Formats
+
+### YOLO Format
+
+The YOLO (You Only Look Once) format is widely used for object detection tasks. When exporting to YOLO format, AnyLabeling generates:
+
+- Text files (*.txt) for each image with normalized bounding box coordinates
+- A classes.txt file containing the list of class names
+
+**Format structure:**
+```
+<class_id> <center_x> <center_y> <width> <height>
+```
+Where all values are normalized between 0 and 1, relative to the image dimensions.
+
+**Use case:** Training YOLO models like YOLOv5, YOLOv8, and other variants.
+
+### COCO Format
+
+COCO (Common Objects in Context) is a comprehensive format that supports object detection, segmentation, and keypoint annotations.
+
+**Key features:**
+- JSON-based annotation format
+- Support for multiple annotation types (bounding boxes, polygons, etc.)
+- Includes metadata about images and categories
+
+**Use case:** Training models with frameworks that support COCO format, like Detectron2, MMDetection, or TensorFlow Object Detection API.
+
+### Pascal VOC Format
+
+Pascal VOC is an XML-based annotation format used in the Visual Object Classes challenges.
+
+**Format structure:**
+- XML files for each image containing information about the image and annotations
+- Includes bounding box coordinates in absolute pixel values
+
+**Use case:** Training models with older frameworks or when working with systems that specifically require VOC format.
+
+### CreateML Format
+
+CreateML format is designed for use with Apple's CreateML tool for training machine learning models on macOS.
+
+**Format structure:**
+- JSON format specifying annotations
+- Designed to work seamlessly with Apple's ecosystem
+
+**Use case:** Training models for iOS/macOS applications using Apple's CreateML.
+
+## How to Export Data
+
+1. Click on the **Tools** menu in the top navigation bar
+2. Select **Export Annotations** to open the export dialog
+3. Select the export format you want to use and click **Export**
+
+Other settings are available in the export dialog.
+
+![Export Dialog](/images/export-dialog.png)
+
+By supporting multiple export formats, AnyLabeling ensures compatibility with a wide range of machine learning frameworks and training pipelines, making it a versatile tool for your computer vision projects. 
